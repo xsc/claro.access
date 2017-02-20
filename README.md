@@ -14,8 +14,21 @@ This library requires Clojure ≥ 1.7.0 and claro ≥ 0.2.8.
 
 ## Usage
 
+
 ```clojure
-(require '[claro.access :as access])
+(require '[claro.access :as access]
+         '[claro.data :as data]
+         '[claro.engine :as engine])
+```
+
+### Middleware
+
+The middleware can be attached to an engine of your choice using `wrap-access`:
+
+```
+(defonce engine
+  (-> (engine/engine)
+      (access/wrap-access)))
 ```
 
 ### Read Access

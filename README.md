@@ -25,7 +25,7 @@ This library requires Clojure ≥ 1.7.0 and claro ≥ 0.2.8.
 
 The middleware can be attached to an engine of your choice using `wrap-access`:
 
-```
+```clojure
 (defonce engine
   (-> (engine/engine)
       (access/wrap-access)))

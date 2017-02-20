@@ -1,4 +1,4 @@
-(defproject claro/access "0.1.0-SNAPSHOT"
+(defproject claro/access "0.1.0"
   :description "Simple access control for claro resolvables."
   :url "https://github.com/xsc/claro.access"
   :license {:name "MIT License"
